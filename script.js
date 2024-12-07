@@ -1,15 +1,23 @@
 // JavaScript Document
 'use strict';
 /*i dont know what im doing*/
-function productDisplay(){
-let prod1 = document.querySelector("#product1");
-let prod2 = document.querySelector("#product2");
-let prod3 = document.querySelector("#product3");
+document.getElementById("btn3").addEventListener("click", function(){
+  document.getElementById("product2").classList.add("hiddenItem");
+  document.getElementById("product3").classList.remove("hiddenItem");
+  document.getElementById("product1").classList.add("currentItem");
+})
 
-let clickBtn1 = document.querySelector("#btn1");
-let clickBtn2 = document.querySelector("#btn2");
-let clickBtn3 = document.querySelector("#btn3");
+document.getElementById("btn2").addEventListener("click", function(){
+  document.getElementById("product2").classList.remove("hiddenItem");
+  document.getElementById("product3").classList.add("hiddenItem");
+  document.getElementById("product1").classList.add("currentItem");
+})
 
+document.getElementById("btn1").addEventListener("click", function(){
+  document.getElementById("product2").classList.add("hiddenItem");
+  document.getElementById("product3").classList.add("hiddenItem");
+  document.getElementById("product1").classList.remove("currentItem");
+})
 
 
 
