@@ -31,10 +31,10 @@ clickBtn3.addEventListener("click", function(){
 function toggleImage() {
     let img = document.getElementById("image");
     
-    if (img.src.endsWith("assets/light_mode.png")) {
-        img.src = "assets/dark_mode.png";
+    if (img.src.endsWith("light_mode.png")) {
+        img.src = "dark_mode.png";
     } else {
-        img.src = "assets/light_mode.png";
+        img.src = "light_mode.png";
     }
     return false;
 }
