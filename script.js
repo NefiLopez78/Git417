@@ -20,22 +20,6 @@ document.getElementById("btn1").addEventListener("click", function(){
 })
 
 
-
-
-clickBtn1.addEventListener("click", function(){
-	prod1.classList.toggle("hidden");
-});
-
-clickBtn2.addEventListener("click", function(){
-	prod2.classList.toggle("hidden");
-});
-
-clickBtn3.addEventListener("click", function(){
-	prod3.classList.toggle("hidden");
-});
-	
-}
-
 function toggleImage() {
     let img = document.getElementById("image");
     
